@@ -370,7 +370,7 @@ function httpsRequestHandler(req, res) {
     var headers = {};
     var hasXForwardedFor = false;
     var hasVia = false;
-    var via = '1.1 ' + hostname + ' (proxy/0.0.0)';
+    var via = '1.1 ' + hostname + ' (proxy/' + version + ')';
 
     options.headers = headers;
     eachHeader(req, function (key, value) {
